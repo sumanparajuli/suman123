@@ -1,0 +1,86 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+/* form css  */
+form{
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+form div{
+  margin: 10px;
+  padding: 10px;
+  background-color: rgb(126, 214, 180);
+  width: 400px;
+  text-align: center;
+}
+form div input{
+  width: 90%;
+  height: 80%;
+  font-size: x-large;
+}
+form button{
+  background-color: rgb(166, 228, 108);
+  font-size: x-large;
+  width: 20%;
+}
+
+/* Github users  */
+.container-github {
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  text-align: center;
+  color: white;
+  
+}
+
+.github-user{
+  background-color: rgb(88, 149, 189);
+  width: 30%;
+  margin: 10px;
+}
+.github-image{
+  width: fit-content;
+  margin: auto;
+}
+.container-github a{
+  text-decoration: none;
+  color: white;
+}
+.btn{
+  width: fit-content;
+  border-radius: 10px;
+  font-size: 17px;
+  padding: 10px;
+  margin: 5px;
+  background-color: rgb(161, 112, 47);
+}
+
+.d-flex-center{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+}
+.flex-col{
+  flex-direction: column;
+}
