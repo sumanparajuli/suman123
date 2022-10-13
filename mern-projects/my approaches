@@ -1,0 +1,9 @@
+1. login functionality
+* first user enters email and password
+* email gets checked if it exists in the database or not.
+* if email exists in the database then check it's password in the database
+* if email doesn't exists in the database then throw an error 'account doesn't exists'
+
+CREATE ACCOUNT
+* user enters his/her details.
+* this respective details should be sent to our backend.
