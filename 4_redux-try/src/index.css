@@ -1,0 +1,145 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.bg-black {
+  background-color: black;
+  color: white;
+}
+
+.nav-image {
+  width: 90px;
+  height: 80px;
+  border-radius: 50%;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+header ul {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+header ul li {
+  margin: 0 20px;
+}
+
+/* button  */
+.button-holder {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+}
+
+.button-holder input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider::before {
+  content: '';
+  position: absolute;
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked+.slider {
+  background-color: #2196F3;
+}
+
+input:focus+.slider {
+  box-shadow: 0 0 1px#2196F3;
+}
+
+input:checked+.slider:before {
+  transform: translateX(26px);
+}
+
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round::before {
+  border-radius: 50%;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.flex-column {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.calculator {
+  height: 400px;
+  width: 300px;
+  background-color: red;
+}
+
+.display {
+  padding: 20px;
+  background-color: white;
+  width: 200px;
+  height: 20px;
+  margin: 20px auto;
+  color: black;
+  text-align: right;
+}
+
+.keys {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding: 10px;
+}
+
+.key {
+  width: 50px;
+  height: 30px;
+  background-color: aqua;
+  margin: 10px;
+  color: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  cursor: pointer;
+}
